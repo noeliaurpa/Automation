@@ -7,19 +7,16 @@
     <classes>
       <class name="TestCases.RegisterTest">
         <methods>
-          <include name="MessageWhenUserExist" invocation-numbers="0 1"/>
+          <include name="MessageWhenUserExist" invocation-numbers="1"/>
           <include name="closeDriver"/>
-          <include name="MandatoryMessageDisplayed"/>
-          <include name="DisplayPageRegister"/>
-          <include name="MessageDifferentPasswords" invocation-numbers="0 1"/>
+          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.RegisterTest -->
       <class name="TestCases.LoginTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="0 1"/>
-          <include name="displayPageLogin"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->
@@ -31,19 +28,16 @@
     <classes>
       <class name="TestCases.RegisterTest">
         <methods>
-          <include name="MessageWhenUserExist" invocation-numbers="0 1"/>
+          <include name="MessageWhenUserExist" invocation-numbers="1"/>
           <include name="closeDriver"/>
-          <include name="MandatoryMessageDisplayed"/>
-          <include name="DisplayPageRegister"/>
-          <include name="MessageDifferentPasswords" invocation-numbers="0 1"/>
+          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.RegisterTest -->
       <class name="TestCases.LoginTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="0 1"/>
-          <include name="displayPageLogin"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->

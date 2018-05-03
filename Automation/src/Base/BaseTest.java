@@ -13,6 +13,9 @@ public class BaseTest {
 	// Se crea el objeto que abrirá el explorador para iniciar todas las pruebas
 	public static WebDriver driver;
 
+	public static WebDriver getDriver() {
+		return driver;
+	}
 	// Este metodo lo tengo que agregar a una clase aparte
 	@BeforeClass
 	@Parameters({ "browser", "baseURL" })

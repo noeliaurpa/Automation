@@ -15,6 +15,8 @@ import Page.RegisterPage;
  */
 public class RegisterTest extends BaseTest {
 	
+	RegisterPage registerPage;
+	
 	@DataProvider(name = "parameterRegister")
 	public Object[][] dataProvider() {
 		return new Object[][] {
@@ -23,29 +25,33 @@ public class RegisterTest extends BaseTest {
 	}
 
 	@Test
-	public static void DisplayPageRegister() {
-		RegisterPage.ButtonRegisterMain();
-		Assert.assertTrue(RegisterPage.verifypresenceOfElementLocated("ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton"));
+	public void DisplayPageRegister() {
+		registerPage = new RegisterPage(super.getDriver());
+		registerPage.ButtonRegisterMain();
+		Assert.assertTrue(registerPage.verifypresenceOfElementLocated("ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton"));
 	}
 
 	@Test
-	public static void MandatoryMessageDisplayed() {
+	public void MandatoryMessageDisplayed() {
 		// se le asigna al objeto el botón PageRegister que tiene ese id y se le dice que la
 		// acción de ese botón va a ser clic
-		RegisterPage.ButtonRegisterMain();
-		RegisterPage.buttonRegister();
-		Assert.assertTrue(RegisterPage.showMessagesEmptyFields());
+		registerPage = new RegisterPage(super.getDriver());
+		registerPage.ButtonRegisterMain();
+		registerPage.buttonRegister();
+		Assert.assertTrue(registerPage.showMessagesEmptyFields());
 	}
 
 	@Test(dataProvider = "parameterRegister")
-	public static void MessageWhenUserExist(String firsname, String lastname, String email, String username, String password, String confirmpassword, String securityQuestion, String securityanswer) {
-		RegisterPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,securityanswer);
-		Assert.assertTrue(RegisterPage.verifypresenceOfElementLocated("ctl00_Main_InfoLabel"));
+	public void MessageWhenUserExist(String firsname, String lastname, String email, String username, String password, String confirmpassword, String securityQuestion, String securityanswer) {
+		registerPage = new RegisterPage(super.getDriver());
+		registerPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,securityanswer);
+		Assert.assertTrue(registerPage.verifypresenceOfElementLocated("ctl00_Main_InfoLabel"));
 	}
 
 	@Test(dataProvider = "parameterRegister")
-	public static void MessageDifferentPasswords(String firsname, String lastname, String email, String username, String password, String confirmpassword, String securityQuestion, String securityanswer) {
-		RegisterPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,securityanswer);
-		Assert.assertTrue(RegisterPage.verifypresenceOfElementLocated("ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare"));
+	public void MessageDifferentPasswords(String firsname, String lastname, String email, String username, String password, String confirmpassword, String securityQuestion, String securityanswer) {
+		registerPage = new RegisterPage(super.getDriver());
+		registerPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,securityanswer);
+		Assert.assertTrue(registerPage.verifypresenceOfElementLocated("ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare"));
 	}
 }

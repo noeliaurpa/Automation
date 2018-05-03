@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.BasePage;
-import Base.BaseTest;
+import TestCases.RegisterTest;
 
-public class RegisterPage extends BaseTest {
+public class RegisterPage extends RegisterTest{
 	
 	static String[] registrationFields = {"ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_FirstNameRequired","ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_LastNameRequired",
 			"ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_EmailRequired", "ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_UserNameRequired",
@@ -49,51 +49,51 @@ public class RegisterPage extends BaseTest {
 	@FindBy(id="ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton")
 	static WebElement btnRegister;
 	
-	public RegisterPage() {
-		PageFactory.initElements(driver, this);
+	public RegisterPage(WebDriver _driver) {
+		PageFactory.initElements(_driver, this);
 	}
 
-	public static void ButtonRegisterMain() {
+	public void ButtonRegisterMain() {
 		BasePage.clickOnElement(btnRegisterMain);
 	}
 	
-	private static void setFirstName(String _firstName) {
+	private void setFirstName(String _firstName) {
 		BasePage.sendKeysToElement(firstName,_firstName);
 	}
 	
-	private static void setLastName(String _lasName) {
+	private void setLastName(String _lasName) {
 		BasePage.sendKeysToElement(lastName, _lasName);
 	}
 	
-	private static void setEmail(String _email) {
+	private void setEmail(String _email) {
 		BasePage.sendKeysToElement(email,_email);
 	}
 	
-	private static void setUsername(String _userName) {
+	private void setUsername(String _userName) {
 		BasePage.sendKeysToElement(userName,_userName);
 	}
 	
-	private static void setPassword(String _password) {
+	private void setPassword(String _password) {
 		BasePage.sendKeysToElement(password,_password);
 	}
 	
-	private static void setConfirmpassword(String _confirmPassword) {
+	private void setConfirmpassword(String _confirmPassword) {
 		BasePage.sendKeysToElement(confirmPassword,_confirmPassword);
 	}
 	
-	private static void setSecurityQuestion(String _securityQuestion) {
+	private void setSecurityQuestion(String _securityQuestion) {
 		BasePage.sendKeysToElement(securityQuestion,_securityQuestion);
 	}
 	
-	private static void setSecurityanswer(String _securityAnswer) {
+	private void setSecurityanswer(String _securityAnswer) {
 		BasePage.sendKeysToElement(securityAnswer,_securityAnswer);
 	}
 	
-	public static void buttonRegister() {
+	public void buttonRegister() {
 		BasePage.clickOnElement(btnRegister);
 	}
 	
-	public static void getUserData(String _firsname, String _lastname, String _email, String _username, String _password, String _confirmpassword, String _securityQuestion, String _securityanswer) {
+	public void getUserData(String _firsname, String _lastname, String _email, String _username, String _password, String _confirmpassword, String _securityQuestion, String _securityanswer) {
 		ButtonRegisterMain();
 		setFirstName(_firsname);
 		setLastName(_lastname);
@@ -106,7 +106,7 @@ public class RegisterPage extends BaseTest {
 		buttonRegister();
 	}
 	
-	public static boolean verifypresenceOfElementLocated(String id) {
+	public boolean verifypresenceOfElementLocated(String id) {
 		if (BasePage.verifyLoadsMenu()) {
 			WebElement element = driver.findElement(By.id(id));
 			return BasePage.waitForElementVisible(element);
@@ -114,7 +114,7 @@ public class RegisterPage extends BaseTest {
 		return false;
 	}
 
-	public static boolean showMessagesEmptyFields() {
+	public boolean showMessagesEmptyFields() {
 		WebDriverWait wait = new WebDriverWait(driver, 3);
 		WebElement element;
 		boolean showMessages = true;
