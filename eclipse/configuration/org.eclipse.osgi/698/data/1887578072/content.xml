@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='C:\Users\nurpi-as\.p2\pool\.eclipseextension' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1525117906708'/>
+    <property name='org.eclipse.update.site.policy' value='MANAGED-ONLY'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <references size='10'>
+    <repository uri='http://update.eclemma.org/' url='http://update.eclemma.org/' type='0' options='0'/>
+    <repository uri='http://download.eclipse.org/mylyn/releases/3.23' url='http://download.eclipse.org/mylyn/releases/3.23' type='0' options='0'/>
+    <repository uri='http://update.eclemma.org/' url='http://update.eclemma.org/' type='1' options='0'/>
+    <repository uri='http://download.eclipse.org/egit/updates' url='http://download.eclipse.org/egit/updates' type='0' options='0'/>
+    <repository uri='http://download.eclipse.org/egit/updates' url='http://download.eclipse.org/egit/updates' type='1' options='0'/>
+    <repository uri='http://download.eclipse.org/mylyn/releases/3.23' url='http://download.eclipse.org/mylyn/releases/3.23' type='1' options='0'/>
+    <repository uri='http://download.eclipse.org/oomph/updates' url='http://download.eclipse.org/oomph/updates' type='1' options='0'/>
+    <repository uri='http://download.eclipse.org/oomph/updates' url='http://download.eclipse.org/oomph/updates' type='0' options='0'/>
+    <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='0' options='0'/>
+    <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='1' options='0'/>
+  </references>
+  <units size='3'>
+    <unit id='com.mountainminds.eclemma.core' version='3.1.0.201804041601'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Old EclEmma version (com.mountainminds.eclemma) cannot be installed together with new (org.eclipse.eclemma). Uninstall currently installed version and try the install again.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Eclipse EclEmma'/>
+        <property name='maven-classifier' value='p2inf'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='osgi.bundle' name='com.mountainminds.eclemma.core' version='3.1.0.201804041601'/>
+      </provides>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='org.maven.ide.eclipse' version='1.8.3.20180227-2137'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='This version of m2eclipse cannot be installed on top of the already installed m2eclipse. Uninstall the previous version of m2eclipse and try the install again.'/>
+        <property name='maven-classifier' value='p2inf'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='osgi.bundle' name='org.maven.ide.eclipse' version='1.8.3.20180227-2137'/>
+      </provides>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='com.mountainminds.eclemma.core' version='3.0.1.201711142128'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Old EclEmma version (com.mountainminds.eclemma) cannot be installed together with new (org.eclipse.eclemma). Uninstall currently installed version and try the install again.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Eclipse EclEmma'/>
+        <property name='maven-classifier' value='p2inf'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='osgi.bundle' name='com.mountainminds.eclemma.core' version='3.0.1.201711142128'/>
+      </provides>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+  </units>
+</repository>

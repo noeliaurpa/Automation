@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1524685669376" transient="false">
+<config date="1525117796359" transient="false">
+	<site updateable="true" url="file:/C:/Users/nurpi-as/.p2/pool/" enabled="true" policy="MANAGED-ONLY">
+		<feature id="org.eclipse.recommenders.news.rcp.feature" version="2.5.2.v20180401-1226" url="features/org.eclipse.recommenders.news.rcp.feature_2.5.2.v20180401-1226/" plugin-identifier="org.eclipse.recommenders.news">
+		</feature>
+		<feature id="org.eclipse.wst.common_core.feature" version="3.9.1.v201803221834" url="features/org.eclipse.wst.common_core.feature_3.9.1.v201803221834/">
+		</feature>
+		<feature id="org.eclipse.wst.common_ui.feature" version="3.9.1.v201803221834" url="features/org.eclipse.wst.common_ui.feature_3.9.1.v201803221834/">
+		</feature>
+		<feature id="org.eclipse.epp.package.common.feature" version="4.7.3.20180405-1200" url="features/org.eclipse.epp.package.common.feature_4.7.3.20180405-1200/">
+		</feature>
+		<feature id="org.eclipse.platform" version="4.7.3.v20180330-0640" url="features/org.eclipse.platform_4.7.3.v20180330-0640/">
+		</feature>
+		<feature id="org.eclipse.jdt" version="3.13.4.v20180330-0919" url="features/org.eclipse.jdt_3.13.4.v20180330-0919/">
+		</feature>
+		<feature id="org.eclipse.epp.package.java.feature" version="4.7.3.20180405-1200" url="features/org.eclipse.epp.package.java.feature_4.7.3.20180405-1200/" plugin-identifier="org.eclipse.epp.package.java">
+		</feature>
+		<feature id="org.eclipse.wst.xml_ui.feature" version="3.9.2.v201803221834" url="features/org.eclipse.wst.xml_ui.feature_3.9.2.v201803221834/" plugin-identifier="org.eclipse.wst.xml.ui">
+		</feature>
+		<feature id="org.eclipse.help" version="2.2.104.v20180330-0640" url="features/org.eclipse.help_2.2.104.v20180330-0640/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.eclipse.recommenders.rcp.feature" version="2.5.2.v20180401-1226" url="features/org.eclipse.recommenders.rcp.feature_2.5.2.v20180401-1226/" plugin-identifier="org.eclipse.recommenders.rcp">
+		</feature>
+		<feature id="org.eclipse.eclemma.feature" version="3.1.0.201804041601" url="features/org.eclipse.eclemma.feature_3.1.0.201804041601/" plugin-identifier="org.eclipse.eclemma.ui">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="1.6.3.v20180329-0507" url="features/org.eclipse.e4.rcp_1.6.3.v20180329-0507/">
+		</feature>
+		<feature id="org.eclipse.recommenders.mylyn.rcp.feature" version="2.5.2.v20180401-1226" url="features/org.eclipse.recommenders.mylyn.rcp.feature_2.5.2.v20180401-1226/" plugin-identifier="org.eclipse.recommenders.mylyn.rcp">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.7.3.v20180330-0640" url="features/org.eclipse.rcp_4.7.3.v20180330-0640/">
+		</feature>
+		<feature id="org.eclipse.recommenders.snipmatch.rcp.feature" version="2.5.2.v20180401-1226" url="features/org.eclipse.recommenders.snipmatch.rcp.feature_2.5.2.v20180401-1226/" plugin-identifier="org.eclipse.recommenders.snipmatch.rcp">
+		</feature>
+	</site>
 </config>

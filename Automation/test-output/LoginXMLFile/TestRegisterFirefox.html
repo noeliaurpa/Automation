@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  TestRegisterFirefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestRegisterFirefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 27 09:52:27 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12040 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.RegisterTest.MessageDifferentPasswords()'><b>MessageDifferentPasswords</b><br>Test class: TestCases.RegisterTest<br>Parameters: Clarisa, Vela, clarivela@gmail.com, Clave, clave123#, clave123#, hola, hola</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (e73d6399-1b1b-4a67-90a0-74cc6d16f206)] -&gt; id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;SCA-WS380&apos;, ip: &apos;192.168.189.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15156, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e73d6399-1b1b-4a67-90a0-74cc6d16f206
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at Base.BaseMethod.waitForElementVisible(BaseMethod.java:31)
+	at Page.PageRegister.verifypresenceOfElementLocated(Register.java:108)
+	at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:54)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658487789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658487789'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (e73d6399-1b1b-4a67-90a0-74cc6d16f206)] -&gt; id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;SCA-WS380&apos;, ip: &apos;192.168.189.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15156, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e73d6399-1b1b-4a67-90a0-74cc6d16f206
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at Base.BaseMethod.waitForElementVisible(BaseMethod.java:31)
+	at Page.PageRegister.verifypresenceOfElementLocated(Register.java:108)
+	at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+<tr>
+<td title='TestCases.RegisterTest.MessageWhenUserExist()'><b>MessageWhenUserExist</b><br>Test class: TestCases.RegisterTest<br>Parameters: MariFlor, Flori, mariflor@gmail.com, Florcita, flori123, flori123#, hola, hola</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #ctl00_Main_InfoLabel
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;SCA-WS380&apos;, ip: &apos;192.168.189.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15156, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e73d6399-1b1b-4a67-90a0-74cc6d16f206
+*** Element info: {Using=id, value=ctl00_Main_InfoLabel}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at Page.PageRegister.verifypresenceOfElementLocated(Register.java:107)
+	at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:47)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688150025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688150025'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #ctl00_Main_InfoLabel
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+System info: host: &apos;SCA-WS380&apos;, ip: &apos;192.168.189.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 15156, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e73d6399-1b1b-4a67-90a0-74cc6d16f206
+*** Element info: {Using=id, value=ctl00_Main_InfoLabel}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at Page.PageRegister.verifypresenceOfElementLocated(Register.java:107)
+	at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.RegisterTest.DisplayPageRegister()'><b>DisplayPageRegister</b><br>Test class: TestCases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+<tr>
+<td title='TestCases.RegisterTest.MandatoryMessageDisplayed()'><b>MandatoryMessageDisplayed</b><br>Test class: TestCases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+<tr>
+<td title='TestCases.RegisterTest.MessageDifferentPasswords()'><b>MessageDifferentPasswords</b><br>Test class: TestCases.RegisterTest<br>Parameters: MariFlor, Flori, mariflor@gmail.com, Florcita, flori123, flori123#, hola, hola</td>
+<td></td>
+<td>0</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+<tr>
+<td title='TestCases.RegisterTest.MessageWhenUserExist()'><b>MessageWhenUserExist</b><br>Test class: TestCases.RegisterTest<br>Parameters: Clarisa, Vela, clarivela@gmail.com, Clave, clave123#, clave123#, hola, hola</td>
+<td></td>
+<td>0</td>
+<td>TestCases.RegisterTest@7c1e2a9e</td></tr>
+</table><p>
+</body>
+</html>

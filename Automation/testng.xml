@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--- Este Suite es para crear una seccion con el nombre que usted desee, 
+	y esa carpeta se crea en test-output -->
+<suite name="LoginXMLFile">
+	<!--- aqui se le agrega el nombre del Test, el que quiera -->
+	<test name="TestWithChrome" verbose="5">
+		<parameter name="browser" value="chrome" />
+		<parameter name="baseURL" value="http://qa-trainingw7:86/" />
+		<classes>
+			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
+				nombre de la clase, ejemplo Login o Register -->
+			<class name="TestCases.LoginTest" />
+			<class name="TestCases.RegisterTest" />
+		</classes>
+	</test>
+	<test name="TestWithFirefox" verbose="5">
+		<parameter name="browser" value="firefox" />
+		<parameter name="baseURL" value="http://qa-trainingw7:86/" />
+		<classes>
+			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
+				nombre de la clase, ejemplo Login o Register -->
+			<class name="TestCases.LoginTest" />
+			<class name="TestCases.RegisterTest" />
+		</classes>
+	</test>
+</suite>

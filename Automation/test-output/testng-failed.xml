@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginXMLFile]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestWithChrome(failed)">
+    <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCases.RegisterTest">
+        <methods>
+          <include name="MessageWhenUserExist" invocation-numbers="0 1"/>
+          <include name="closeDriver"/>
+          <include name="MandatoryMessageDisplayed"/>
+          <include name="DisplayPageRegister"/>
+          <include name="MessageDifferentPasswords" invocation-numbers="0 1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.RegisterTest -->
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="0 1"/>
+          <include name="displayPageLogin"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
+    </classes>
+  </test> <!-- TestWithChrome(failed) -->
+  <test thread-count="5" name="TestWithFirefox(failed)">
+    <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestCases.RegisterTest">
+        <methods>
+          <include name="MessageWhenUserExist" invocation-numbers="0 1"/>
+          <include name="closeDriver"/>
+          <include name="MandatoryMessageDisplayed"/>
+          <include name="DisplayPageRegister"/>
+          <include name="MessageDifferentPasswords" invocation-numbers="0 1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.RegisterTest -->
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="0 1"/>
+          <include name="displayPageLogin"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
+    </classes>
+  </test> <!-- TestWithFirefox(failed) -->
+</suite> <!-- Failed suite [LoginXMLFile] -->
