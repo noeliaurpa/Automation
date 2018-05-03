@@ -16,14 +16,15 @@ public class BaseTest {
 	public static WebDriver getDriver() {
 		return driver;
 	}
+
 	// Este metodo lo tengo que agregar a una clase aparte
 	@BeforeClass
 	@Parameters({ "browser", "baseURL" })
-	public static void setupDriver(String browser, String baseUrl) throws Exception{
+	public static void setupDriver(String browser, String baseUrl) throws Exception {
 		driver = createDriver(browser, baseUrl);
 	}
 
-	private static WebDriver createDriver(String browser, String baseUrl) throws Exception{
+	private static WebDriver createDriver(String browser, String baseUrl) throws Exception {
 		if (browser.toLowerCase().equals("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\nurpi-as\\Downloads\\chromedriver.exe");
@@ -37,7 +38,7 @@ public class BaseTest {
 			driver = new FirefoxDriver(capability);
 			System.out.println("Create driver firefox");
 		}
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(baseUrl);
 		return driver;
@@ -47,7 +48,7 @@ public class BaseTest {
 	@AfterClass
 	public static void closeDriver() {
 		// cierra el objeto, por lo tanto cierra el navegador
-		//driver.close();
+		// driver.close();
 		driver.quit();
 	}
 }
