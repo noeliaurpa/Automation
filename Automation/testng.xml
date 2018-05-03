@@ -9,6 +9,7 @@
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
+			<class name="TestCases.HomePageTest"/>
 			<class name="TestCases.LoginTest" />
 			<class name="TestCases.RegisterTest" />
 		</classes>
@@ -19,6 +20,7 @@
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
+			<class name="TestCases.HomePageTest"/>
 			<class name="TestCases.LoginTest" />
 			<class name="TestCases.RegisterTest" />
 		</classes>

@@ -5,6 +5,8 @@ package TestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import Base.BasePage;
 import Base.BaseTest;
 import Page.RegisterPage;
 import DataProviders.Users;
@@ -17,6 +19,11 @@ public class RegisterTest extends BaseTest {
 
 	RegisterPage registerPage;
 
+	@Test
+	public void displayMenuRegisterPage() {
+		Assert.assertTrue(BasePage.verifyLoadsMenu());
+	}
+	
 	@Test
 	public void DisplayPageRegister() {
 		registerPage = new RegisterPage(super.getDriver());

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="12" failed="6" skipped="0">
+<testng-results ignored="0" total="23" passed="17" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-05-03T17:28:54Z" name="LoginXMLFile" finished-at="2018-05-03T17:29:47Z" duration-ms="52561">
+  <suite started-at="2018-05-03T17:48:11Z" name="LoginXMLFile" finished-at="2018-05-03T17:49:09Z" duration-ms="57391">
     <groups>
     </groups>
-    <test started-at="2018-05-03T17:28:54Z" name="TestWithChrome" finished-at="2018-05-03T17:29:24Z" duration-ms="30049">
+    <test started-at="2018-05-03T17:48:11Z" name="TestWithChrome" finished-at="2018-05-03T17:48:47Z" duration-ms="36323">
       <class name="TestCases.RegisterTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:08Z" name="setupDriver" finished-at="2018-05-03T17:29:15Z" duration-ms="7013" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:31Z" name="setupDriver" finished-at="2018-05-03T17:48:39Z" duration-ms="8170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="DisplayPageRegister()[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:15Z" name="DisplayPageRegister" finished-at="2018-05-03T17:29:16Z" duration-ms="1044" status="PASS">
+        <test-method signature="DisplayPageRegister()[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:39Z" name="DisplayPageRegister" finished-at="2018-05-03T17:48:40Z" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DisplayPageRegister -->
-        <test-method signature="MandatoryMessageDisplayed()[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:16Z" name="MandatoryMessageDisplayed" finished-at="2018-05-03T17:29:17Z" duration-ms="485" status="PASS">
+        <test-method signature="MandatoryMessageDisplayed()[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:40Z" name="MandatoryMessageDisplayed" finished-at="2018-05-03T17:48:40Z" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MandatoryMessageDisplayed -->
-        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:17Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:29:21Z" duration-ms="4173" status="FAIL">
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:40Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:48:44Z" duration-ms="4173" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,25 +76,25 @@
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (238e112b7104d5b8d7c66386bd611429)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (cabd0b22c71d8e33d80bfc49265c516f)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 238e112b7104d5b8d7c66386bd611429]]>
+Session ID: cabd0b22c71d8e33d80bfc49265c516f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (238e112b7104d5b8d7c66386bd611429)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (cabd0b22c71d8e33d80bfc49265c516f)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 238e112b7104d5b8d7c66386bd611429
+Session ID: cabd0b22c71d8e33d80bfc49265c516f
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
 at Base.BasePage.waitForElementVisible(BasePage.java:37)
 at Page.RegisterPage.verifypresenceOfElementLocated(RegisterPage.java:119)
-at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:54)
+at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -126,7 +126,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageDifferentPasswords -->
-        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:21Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:29:22Z" duration-ms="881" status="PASS">
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:44Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:48:45Z" duration-ms="796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageDifferentPasswords -->
-        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:22Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:29:23Z" duration-ms="1086" status="PASS">
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:45Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:48:46Z" duration-ms="979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,7 +218,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageWhenUserExist -->
-        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:23Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:29:24Z" duration-ms="820" status="FAIL">
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:46Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:48:47Z" duration-ms="787" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -272,7 +272,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.6
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 238e112b7104d5b8d7c66386bd611429
+Session ID: cabd0b22c71d8e33d80bfc49265c516f
 *** Element info: {Using=id, value=ctl00_Main_InfoLabel}]]>
             </message>
             <full-stacktrace>
@@ -285,7 +285,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.6
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 238e112b7104d5b8d7c66386bd611429
+Session ID: cabd0b22c71d8e33d80bfc49265c516f
 *** Element info: {Using=id, value=ctl00_Main_InfoLabel}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -304,7 +304,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:218)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 at Page.RegisterPage.verifypresenceOfElementLocated(RegisterPage.java:118)
-at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:45)
+at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -336,13 +336,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageWhenUserExist -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.RegisterTest@7494f96a]" started-at="2018-05-03T17:29:24Z" name="closeDriver" finished-at="2018-05-03T17:29:24Z" duration-ms="600" status="PASS">
+        <test-method signature="displayMenuRegisterPage()[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:47Z" name="displayMenuRegisterPage" finished-at="2018-05-03T17:48:47Z" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuRegisterPage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.RegisterTest@49e5f737]" started-at="2018-05-03T17:48:47Z" name="closeDriver" finished-at="2018-05-03T17:48:47Z" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- TestCases.RegisterTest -->
       <class name="TestCases.LoginTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@26b3fd41]" started-at="2018-05-03T17:28:54Z" name="setupDriver" finished-at="2018-05-03T17:29:06Z" duration-ms="11395" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:21Z" name="setupDriver" finished-at="2018-05-03T17:48:28Z" duration-ms="7442" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -358,11 +362,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="displayPageLogin()[pri:0, instance:TestCases.LoginTest@26b3fd41]" started-at="2018-05-03T17:29:06Z" name="displayPageLogin" finished-at="2018-05-03T17:29:06Z" duration-ms="748" status="PASS">
+        <test-method signature="displayMenuLoginPage()[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:28Z" name="displayMenuLoginPage" finished-at="2018-05-03T17:48:28Z" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuLoginPage -->
+        <test-method signature="displayPageLogin()[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:28Z" name="displayPageLogin" finished-at="2018-05-03T17:48:29Z" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayPageLogin -->
-        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@26b3fd41]" started-at="2018-05-03T17:29:06Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:29:08Z" duration-ms="1153" status="PASS">
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:29Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:48:30Z" duration-ms="736" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -378,7 +386,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCredentialsLogin -->
-        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@26b3fd41]" started-at="2018-05-03T17:29:08Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:29:08Z" duration-ms="17" status="FAIL">
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:30Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:48:30Z" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -402,7 +410,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.6
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 9e062080558e1ddedc5ea6be9dc1a598
+Session ID: 5b213845f629a6ed78b618813130bcd9
 *** Element info: {Using=id, value=ctl00_LoginView_LoginLink}]]>
             </message>
             <full-stacktrace>
@@ -415,7 +423,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.6
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.139, webStorageEnabled: true}
-Session ID: 9e062080558e1ddedc5ea6be9dc1a598
+Session ID: 5b213845f629a6ed78b618813130bcd9
 *** Element info: {Using=id, value=ctl00_LoginView_LoginLink}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -439,7 +447,7 @@ at com.sun.proxy.$Proxy13.click(Unknown Source)
 at Base.BasePage.clickOnElement(BasePage.java:28)
 at Page.LoginPage.buttonLoginMain(LoginPage.java:30)
 at Page.LoginPage.logIn(LoginPage.java:46)
-at TestCases.LoginTest.verifyCredentialsLogin(LoginTest.java:30)
+at TestCases.LoginTest.verifyCredentialsLogin(LoginTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -471,15 +479,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCredentialsLogin -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.LoginTest@26b3fd41]" started-at="2018-05-03T17:29:08Z" name="closeDriver" finished-at="2018-05-03T17:29:08Z" duration-ms="604" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.LoginTest@445b295b]" started-at="2018-05-03T17:48:30Z" name="closeDriver" finished-at="2018-05-03T17:48:31Z" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- TestCases.LoginTest -->
+      <class name="TestCases.HomePageTest">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.HomePageTest@1757cd72]" started-at="2018-05-03T17:48:11Z" name="setupDriver" finished-at="2018-05-03T17:48:20Z" duration-ms="8601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-trainingw7:86/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="displayMenuRegisterPage()[pri:0, instance:TestCases.HomePageTest@1757cd72]" started-at="2018-05-03T17:48:20Z" name="displayMenuRegisterPage" finished-at="2018-05-03T17:48:20Z" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuRegisterPage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.HomePageTest@1757cd72]" started-at="2018-05-03T17:48:20Z" name="closeDriver" finished-at="2018-05-03T17:48:21Z" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- TestCases.HomePageTest -->
     </test> <!-- TestWithChrome -->
-    <test started-at="2018-05-03T17:29:24Z" name="TestWithFirefox" finished-at="2018-05-03T17:29:47Z" duration-ms="22454">
+    <test started-at="2018-05-03T17:48:48Z" name="TestWithFirefox" finished-at="2018-05-03T17:49:09Z" duration-ms="21017">
       <class name="TestCases.RegisterTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:33Z" name="setupDriver" finished-at="2018-05-03T17:29:39Z" duration-ms="6515" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:48:55Z" name="setupDriver" finished-at="2018-05-03T17:49:01Z" duration-ms="5674" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -495,15 +529,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="DisplayPageRegister()[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:39Z" name="DisplayPageRegister" finished-at="2018-05-03T17:29:40Z" duration-ms="619" status="PASS">
+        <test-method signature="DisplayPageRegister()[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:01Z" name="DisplayPageRegister" finished-at="2018-05-03T17:49:02Z" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DisplayPageRegister -->
-        <test-method signature="MandatoryMessageDisplayed()[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:40Z" name="MandatoryMessageDisplayed" finished-at="2018-05-03T17:29:40Z" duration-ms="555" status="PASS">
+        <test-method signature="MandatoryMessageDisplayed()[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:02Z" name="MandatoryMessageDisplayed" finished-at="2018-05-03T17:49:02Z" duration-ms="572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MandatoryMessageDisplayed -->
-        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:40Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:29:44Z" duration-ms="3664" status="FAIL">
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:02Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:49:06Z" duration-ms="3651" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -548,25 +582,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (5b3e9ad7-d770-4a65-8304-c6505e540fb8)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (c0f16771-7cc4-4e77-a25d-97d0653f189c)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11324, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5b3e9ad7-d770-4a65-8304-c6505e540fb8]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12976, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c0f16771-7cc4-4e77-a25d-97d0653f189c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (5b3e9ad7-d770-4a65-8304-c6505e540fb8)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[FirefoxDriver: firefox on XP (c0f16771-7cc4-4e77-a25d-97d0653f189c)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11324, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5b3e9ad7-d770-4a65-8304-c6505e540fb8
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12976, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c0f16771-7cc4-4e77-a25d-97d0653f189c
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
 at Base.BasePage.waitForElementVisible(BasePage.java:37)
 at Page.RegisterPage.verifypresenceOfElementLocated(RegisterPage.java:119)
-at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:54)
+at TestCases.RegisterTest.MessageDifferentPasswords(RegisterTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -598,7 +632,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageDifferentPasswords -->
-        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:44Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:29:45Z" duration-ms="631" status="PASS">
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:06Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-05-03T17:49:06Z" duration-ms="622" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -644,7 +678,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageDifferentPasswords -->
-        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:45Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:29:45Z" duration-ms="660" status="PASS">
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:06Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:49:07Z" duration-ms="546" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -690,7 +724,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageWhenUserExist -->
-        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:45Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:29:46Z" duration-ms="611" status="FAIL">
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:07Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-05-03T17:49:08Z" duration-ms="621" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -740,8 +774,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11324, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5b3e9ad7-d770-4a65-8304-c6505e540fb8
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12976, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c0f16771-7cc4-4e77-a25d-97d0653f189c
 *** Element info: {Using=id, value=ctl00_Main_InfoLabel}]]>
             </message>
             <full-stacktrace>
@@ -750,8 +784,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11324, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 5b3e9ad7-d770-4a65-8304-c6505e540fb8
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12976, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c0f16771-7cc4-4e77-a25d-97d0653f189c
 *** Element info: {Using=id, value=ctl00_Main_InfoLabel}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -768,7 +802,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:218)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
 at Page.RegisterPage.verifypresenceOfElementLocated(RegisterPage.java:118)
-at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:45)
+at TestCases.RegisterTest.MessageWhenUserExist(RegisterTest.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -800,13 +834,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MessageWhenUserExist -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.RegisterTest@313b2ea6]" started-at="2018-05-03T17:29:46Z" name="closeDriver" finished-at="2018-05-03T17:29:47Z" duration-ms="856" status="PASS">
+        <test-method signature="displayMenuRegisterPage()[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:08Z" name="displayMenuRegisterPage" finished-at="2018-05-03T17:49:08Z" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuRegisterPage -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.RegisterTest@175b9425]" started-at="2018-05-03T17:49:08Z" name="closeDriver" finished-at="2018-05-03T17:49:09Z" duration-ms="864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- TestCases.RegisterTest -->
       <class name="TestCases.LoginTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@6a2b953e]" started-at="2018-05-03T17:29:24Z" name="setupDriver" finished-at="2018-05-03T17:29:31Z" duration-ms="6305" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:48Z" name="setupDriver" finished-at="2018-05-03T17:48:53Z" duration-ms="5284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -822,11 +860,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="displayPageLogin()[pri:0, instance:TestCases.LoginTest@6a2b953e]" started-at="2018-05-03T17:29:31Z" name="displayPageLogin" finished-at="2018-05-03T17:29:31Z" duration-ms="611" status="PASS">
+        <test-method signature="displayMenuLoginPage()[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:53Z" name="displayMenuLoginPage" finished-at="2018-05-03T17:48:53Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuLoginPage -->
+        <test-method signature="displayPageLogin()[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:53Z" name="displayPageLogin" finished-at="2018-05-03T17:48:54Z" duration-ms="702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayPageLogin -->
-        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@6a2b953e]" started-at="2018-05-03T17:29:31Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:29:32Z" duration-ms="365" status="PASS">
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:54Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:48:54Z" duration-ms="632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -842,7 +884,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCredentialsLogin -->
-        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@6a2b953e]" started-at="2018-05-03T17:29:32Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:29:32Z" duration-ms="7" status="FAIL">
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:54Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-05-03T17:48:54Z" duration-ms="7" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -862,8 +904,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 944, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d37d9702-48d0-4f8f-9dab-9776f2918259
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4740, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7a727c5c-586e-4ea1-bb7c-29c8674cff6b
 *** Element info: {Using=id, value=ctl00_LoginView_LoginLink}]]>
             </message>
             <full-stacktrace>
@@ -872,8 +914,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
 System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 944, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d37d9702-48d0-4f8f-9dab-9776f2918259
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4740, moz:profile: C:\Users\nurpi-as\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 7a727c5c-586e-4ea1-bb7c-29c8674cff6b
 *** Element info: {Using=id, value=ctl00_LoginView_LoginLink}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -895,7 +937,7 @@ at com.sun.proxy.$Proxy13.click(Unknown Source)
 at Base.BasePage.clickOnElement(BasePage.java:28)
 at Page.LoginPage.buttonLoginMain(LoginPage.java:30)
 at Page.LoginPage.logIn(LoginPage.java:46)
-at TestCases.LoginTest.verifyCredentialsLogin(LoginTest.java:30)
+at TestCases.LoginTest.verifyCredentialsLogin(LoginTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -927,7 +969,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCredentialsLogin -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.LoginTest@6a2b953e]" started-at="2018-05-03T17:29:32Z" name="closeDriver" finished-at="2018-05-03T17:29:33Z" duration-ms="1046" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestCases.LoginTest@a1cdc6d]" started-at="2018-05-03T17:48:54Z" name="closeDriver" finished-at="2018-05-03T17:48:55Z" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

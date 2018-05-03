@@ -2,6 +2,7 @@ package Page;
 
 import java.util.Arrays;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,8 +18,8 @@ public class HomePage extends BaseTest {
 	static String[] menuNav = { "ctl00_TopMenuRepeater_ctl00_MenuLink","ctl00_TopMenuRepeater_ctl01_MenuLink", "ctl00_TopMenuRepeater_ctl02_MenuLink", "ctl00_LoginView_LoginLink", 
 			"ctl00_LoginView_RegisterLink", "ctl00_BrowseAllLink"};
 
-	public HomePage() {
-		PageFactory.initElements(driver, this);
+	public HomePage(WebDriver _driver) {
+		PageFactory.initElements(_driver, this);
 	}
 	
 	@SuppressWarnings("unlikely-arg-type")

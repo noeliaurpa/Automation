@@ -5,6 +5,13 @@
     <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
       <class name="TestCases.RegisterTest">
         <methods>
           <include name="MessageWhenUserExist" invocation-numbers="1"/>
@@ -13,19 +20,19 @@
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.RegisterTest -->
-      <class name="TestCases.LoginTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- TestCases.LoginTest -->
     </classes>
   </test> <!-- TestWithChrome(failed) -->
   <test thread-count="5" name="TestWithFirefox(failed)">
     <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
     <parameter name="browser" value="firefox"/>
     <classes>
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
       <class name="TestCases.RegisterTest">
         <methods>
           <include name="MessageWhenUserExist" invocation-numbers="1"/>
@@ -34,13 +41,6 @@
           <include name="setupDriver"/>
         </methods>
       </class> <!-- TestCases.RegisterTest -->
-      <class name="TestCases.LoginTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- TestCases.LoginTest -->
     </classes>
   </test> <!-- TestWithFirefox(failed) -->
 </suite> <!-- Failed suite [LoginXMLFile] -->
