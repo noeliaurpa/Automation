@@ -21,7 +21,8 @@ public class LoginTest extends BaseTest {
 
 	@Test
 	public void displayMenuLoginPage() {
-		Assert.assertTrue(BasePage.verifyLoadsMenu());
+		BasePage basePage = new BasePage(super.getDriver());
+		Assert.assertTrue(basePage.verifyLoadsMenu());
 	}
 	
 	@Test

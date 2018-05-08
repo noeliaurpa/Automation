@@ -1,5 +1,7 @@
 package Base;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,7 +19,6 @@ public class BaseTest {
 		return driver;
 	}
 
-	// Este metodo lo tengo que agregar a una clase aparte
 	@BeforeClass
 	@Parameters({ "browser", "baseURL" })
 	public static void setupDriver(String browser, String baseUrl) throws Exception {
@@ -38,9 +39,9 @@ public class BaseTest {
 			driver = new FirefoxDriver(capability);
 			System.out.println("Create driver firefox");
 		}
-		// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(baseUrl);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		return driver;
 	}
 

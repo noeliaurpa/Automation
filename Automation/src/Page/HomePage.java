@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Base.BasePage;
 import Base.BaseTest;
 
 public class HomePage extends BaseTest {
@@ -44,5 +46,13 @@ public class HomePage extends BaseTest {
 		}
 		return ShowElements;
 	}	
+	
+	public boolean verifyButtonLoginVisible(String id) {
+		if (BasePage.verifyLoadsMenu()) {
+			WebElement element = driver.findElement(By.id(id));
+			return BasePage.waitForElementVisible(element);
+		}
+		return false;
+	}
 	
 }

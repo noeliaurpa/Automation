@@ -9,9 +9,11 @@
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
-			<class name="TestCases.HomePageTest"/>
+			<class name="TestCases.HomePageTest" />
 			<class name="TestCases.LoginTest" />
 			<class name="TestCases.RegisterTest" />
+			<class name="TestCases.MyAdsAndProfileTest" />
+			<class name="TestCases.PostAnAdTest" />
 		</classes>
 	</test>
 	<test name="TestWithFirefox" verbose="5">
@@ -20,9 +22,11 @@
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
-			<class name="TestCases.HomePageTest"/>
+			<class name="TestCases.HomePageTest" />
 			<class name="TestCases.LoginTest" />
 			<class name="TestCases.RegisterTest" />
+			<class name="TestCases.MyAdsAndProfileTest" />
+			<class name="TestCases.PostAnAdTest" />
 		</classes>
 	</test>
 </suite>

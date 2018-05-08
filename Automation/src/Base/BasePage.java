@@ -3,6 +3,7 @@ package Base;
 import java.util.Arrays;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,7 +13,14 @@ public class BasePage extends BaseTest {
 	static String[] menuNav = { "ctl00_TopMenuRepeater_ctl00_MenuLink", "ctl00_TopMenuRepeater_ctl01_MenuLink",
 			"ctl00_TopMenuRepeater_ctl02_MenuLink", "ctl00_LoginView_LoginLink", "ctl00_LoginView_RegisterLink",
 			"ctl00_BrowseAllLink" };
+	static WebDriver driver;
 
+	//constructor que reciba el driver
+	//Investigar cuando se utiliza un try catch
+	public BasePage(WebDriver _driver){
+		driver = _driver;
+	}
+	
 	public static boolean verifypresenceOfElementLocated(String id) {
 		// Se crea un wait para darle como un tiempo para poder encontrar el elemento
 		// con el id seleccionado, en el tiempo

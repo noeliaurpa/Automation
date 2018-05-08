@@ -13,8 +13,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.BasePage;
 import TestCases.RegisterTest;
 
-public class RegisterPage extends RegisterTest {
+public class RegisterPage extends BasePage {
 
+	WebDriver driver;
 	static String[] registrationFields = {
 			"ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_FirstNameRequired",
 			"ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_LastNameRequired",
@@ -56,6 +57,8 @@ public class RegisterPage extends RegisterTest {
 	static WebElement btnRegister;
 
 	public RegisterPage(WebDriver _driver) {
+		super(_driver);
+		this.driver = _driver;
 		PageFactory.initElements(_driver, this);
 	}
 
@@ -113,7 +116,7 @@ public class RegisterPage extends RegisterTest {
 		buttonRegister();
 	}
 
-	public boolean verifypresenceOfElementLocated(String id) {
+	public boolean verifypresenceOfElement(String id) {
 		if (BasePage.verifyLoadsMenu()) {
 			WebElement element = driver.findElement(By.id(id));
 			return BasePage.waitForElementVisible(element);

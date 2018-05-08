@@ -8,8 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import Base.BasePage;
 import TestCases.LoginTest;
 
-public class LoginPage extends LoginTest {
+public class LoginPage extends BasePage {
 
+	WebDriver driver;
+	
 	@FindBy(id = "ctl00_LoginView_LoginLink")
 	WebElement btnLoginMain;
 
@@ -23,7 +25,9 @@ public class LoginPage extends LoginTest {
 	WebElement btnLogin;
 
 	public LoginPage(WebDriver _driver) {
-		PageFactory.initElements(_driver, this);
+		super(_driver);
+		driver = _driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	public void buttonLoginMain() {

@@ -21,15 +21,15 @@ public class RegisterTest extends BaseTest {
 
 	@Test
 	public void displayMenuRegisterPage() {
-		Assert.assertTrue(BasePage.verifyLoadsMenu());
+		BasePage basePage = new BasePage(super.getDriver());
+		Assert.assertTrue(basePage.verifyLoadsMenu());
 	}
 	
 	@Test
 	public void DisplayPageRegister() {
 		registerPage = new RegisterPage(super.getDriver());
 		registerPage.ButtonRegisterMain();
-		Assert.assertTrue(registerPage.verifypresenceOfElementLocated(
-				"ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton"));
+		Assert.assertTrue(registerPage.verifypresenceOfElement("ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton"));
 	}
 
 	@Test
@@ -49,7 +49,7 @@ public class RegisterTest extends BaseTest {
 		registerPage = new RegisterPage(super.getDriver());
 		registerPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,
 				securityanswer);
-		Assert.assertTrue(registerPage.verifypresenceOfElementLocated("ctl00_Main_InfoLabel"));
+		Assert.assertTrue(registerPage.verifypresenceOfElement("ctl00_Main_InfoLabel"));
 	}
 
 	@Test(dataProvider = "parameterRegister", dataProviderClass = Users.class)
@@ -58,7 +58,6 @@ public class RegisterTest extends BaseTest {
 		registerPage = new RegisterPage(super.getDriver());
 		registerPage.getUserData(firsname, lastname, email, username, password, confirmpassword, securityQuestion,
 				securityanswer);
-		Assert.assertTrue(registerPage.verifypresenceOfElementLocated(
-				"ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare"));
+		Assert.assertTrue(registerPage.verifypresenceOfElement("ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare"));
 	}
 }
