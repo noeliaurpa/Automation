@@ -1,7 +1,7 @@
 /**
  * 
  */
-package TestCases;
+package Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,7 +9,9 @@ import org.testng.annotations.Test;
 import Base.BasePage;
 import Base.BaseTest;
 import DataProviders.Users;
-import Page.LoginPage;
+import Pages.HomePage;
+import Pages.LoginPage;
+import Pages.NavigationPage;
 
 /**
  * @author nurpi-as
@@ -36,6 +38,9 @@ public class LoginTest extends BaseTest {
 	public void verifyCredentialsLogin(String username, String password) {
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.logIn(username, password);
-		Assert.assertTrue(loginPage.verifyUsr(username));
+		HomePage homePage = new HomePage(super.getDriver());
+		Assert.assertTrue(homePage.verifyUsr(username));
+		NavigationPage navigationPage = new NavigationPage(super.getDriver());
+		navigationPage.buttonLogout();
 	}
 }

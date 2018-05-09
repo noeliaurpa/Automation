@@ -1,4 +1,4 @@
-package Page;
+package Pages;
 
 import java.util.Arrays;
 import org.openqa.selenium.By;
@@ -53,6 +53,11 @@ public class HomePage extends BaseTest {
 			return BasePage.waitForElementVisible(element);
 		}
 		return false;
+	}
+	
+	public boolean verifyUsr(String usr) {
+		WebElement element = driver.findElement(By.id("ctl00_LoginView_MemberName"));
+		return element.isDisplayed() && element.getText().equals(usr);
 	}
 	
 }

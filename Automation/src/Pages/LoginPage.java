@@ -1,4 +1,4 @@
-package Page;
+package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import Base.BasePage;
-import TestCases.LoginTest;
+import Tests.LoginTest;
 
 public class LoginPage extends BasePage {
 
@@ -63,11 +63,6 @@ public class LoginPage extends BasePage {
 
 	public boolean verifyErrorMsg(String errorMsg) {
 		return driver.getPageSource().contains(errorMsg);
-	}
-
-	public boolean verifyUsr(String usr) {
-		WebElement element = driver.findElement(By.id("ctl00_LoginView_MemberName"));
-		return element.isDisplayed() && element.getText().equals(usr);
 	}
 
 }

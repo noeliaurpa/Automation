@@ -1,4 +1,4 @@
-package Page;
+package Pages;
 
 import java.util.Arrays;
 
@@ -45,12 +45,18 @@ public class NavigationPage extends BaseTest {
 
 	@FindBy(id = "ctl00_TopMenuRepeater_ctl02_MenuLink")
 	WebElement myAdsAndProfile;
+	
+	@FindBy(id = "ctl00_LoginView_MemberLoginStatus")
+	WebElement logoutUser;
 
 	public NavigationPage(WebDriver _driver) {
 		driver = _driver;
 		PageFactory.initElements(_driver, this);
 	}
-
+	
+	public void buttonLogout() {
+		BasePage.clickOnElement(logoutUser);
+	}
 	public void buttonHome() {
 		BasePage.clickOnElement(home);
 	}

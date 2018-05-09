@@ -1,11 +1,12 @@
-package TestCases;
+package Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import Base.BaseTest;
 import DataProviders.Users;
-import Page.LoginPage;
-import Page.NavigationPage;
+import Pages.LoginPage;
+import Pages.NavigationPage;
 
 public class HomePageTest extends BaseTest {
 
@@ -25,5 +26,6 @@ public class HomePageTest extends BaseTest {
 	public void displayAllFiels() {
 		navigationPage = new NavigationPage(super.getDriver());
 		Assert.assertTrue(navigationPage.verifyLoadsCategories());
+		navigationPage.buttonLogout();
 	}
 }

@@ -3,30 +3,32 @@
 	y esa carpeta se crea en test-output -->
 <suite name="LoginXMLFile">
 	<!--- aqui se le agrega el nombre del Test, el que quiera -->
-	<test name="TestWithChrome" verbose="5">
+	<test name="TestWithChrome">
 		<parameter name="browser" value="chrome" />
 		<parameter name="baseURL" value="http://qa-trainingw7:86/" />
+		<parameter name="executionType" value="local"/>
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
-			<class name="TestCases.HomePageTest" />
-			<class name="TestCases.LoginTest" />
-			<class name="TestCases.RegisterTest" />
-			<class name="TestCases.MyAdsAndProfileTest" />
-			<class name="TestCases.PostAnAdTest" />
+			<class name="Tests.HomePageTest" />
+			<class name="Tests.LoginTest" />
+			<class name="Tests.RegisterTest" />
+			<class name="Tests.MyAdsAndProfileTest" />
+			<class name="Tests.PostAnAdTest" />
 		</classes>
 	</test>
-	<test name="TestWithFirefox" verbose="5">
+	<test name="TestWithFirefox">
 		<parameter name="browser" value="firefox" />
 		<parameter name="baseURL" value="http://qa-trainingw7:86/" />
+		<parameter name="executionType" value="local"/>
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
-			<class name="TestCases.HomePageTest" />
-			<class name="TestCases.LoginTest" />
-			<class name="TestCases.RegisterTest" />
-			<class name="TestCases.MyAdsAndProfileTest" />
-			<class name="TestCases.PostAnAdTest" />
+			<class name="Tests.HomePageTest" />
+			<class name="Tests.LoginTest" />
+			<class name="Tests.RegisterTest" />
+			<class name="Tests.MyAdsAndProfileTest" />
+			<class name="Tests.PostAnAdTest" />
 		</classes>
 	</test>
 </suite>

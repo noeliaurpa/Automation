@@ -1,14 +1,11 @@
-package TestCases;
-
-import java.util.concurrent.TimeUnit;
+package Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import Base.BaseTest;
 import DataProviders.Users;
-import Page.LoginPage;
-import Page.NavigationPage;
+import Pages.LoginPage;
+import Pages.NavigationPage;
 
 public class MyAdsAndProfileTest extends BaseTest{
 
@@ -21,8 +18,8 @@ public class MyAdsAndProfileTest extends BaseTest{
 		loginPage.logIn(username, password);
 		navigationPage = new NavigationPage(super.getDriver());
 		navigationPage.buttonMyAdsAndProfile();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Assert.assertTrue(navigationPage.verifyLoadFielsMyAdsAndProfile());
+		navigationPage.buttonLogout();
 	}
 	
 	@Test(priority=0)

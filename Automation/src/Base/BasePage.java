@@ -28,10 +28,17 @@ public class BasePage extends BaseTest {
 		// mensaje.
 
 		WebDriverWait wait = new WebDriverWait(driver, 3);
+		//Hablar con purro y que me diga un caso explicito donde utilizar el try catch
+		
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
 		return element.isDisplayed();
 	}
 
+	public void logoutUser(String id) {
+		WebDriverWait wait = new WebDriverWait(driver, 3);
+		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
+		clickOnElement(element);
+	}
 	public static void clickOnElement(WebElement element) {
 		element.click();
 	}

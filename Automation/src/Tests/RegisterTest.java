@@ -1,15 +1,16 @@
 /**
  * 
  */
-package TestCases;
+package Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Base.BasePage;
 import Base.BaseTest;
-import Page.RegisterPage;
 import DataProviders.Users;
+import Pages.NavigationPage;
+import Pages.RegisterPage;
 
 /**
  * @author nurpi-as
@@ -18,6 +19,7 @@ import DataProviders.Users;
 public class RegisterTest extends BaseTest {
 
 	RegisterPage registerPage;
+	NavigationPage navigationPage;
 
 	@Test
 	public void displayMenuRegisterPage() {

@@ -1,4 +1,4 @@
-package Page;
+package Pages;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.BasePage;
-import TestCases.RegisterTest;
+import Tests.RegisterTest;
 
 public class RegisterPage extends BasePage {
 
