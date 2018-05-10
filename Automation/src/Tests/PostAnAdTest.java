@@ -12,7 +12,7 @@ public class PostAnAdTest extends BaseTest{
 	NavigationPage navigationPage;
 	LoginPage loginPage;
 
-	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class, priority=3)
+	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class, priority=13)
 	public void displayAllFiels(String username, String password) {
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.logIn(username, password);
@@ -22,7 +22,7 @@ public class PostAnAdTest extends BaseTest{
 		navigationPage.buttonLogout();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=12)
 	public void verifyToDeployUserNotLogged() {
 		navigationPage = new NavigationPage(super.getDriver());
 		navigationPage.buttonPostAnAd();

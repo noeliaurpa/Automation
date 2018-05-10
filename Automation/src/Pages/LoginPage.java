@@ -11,7 +11,7 @@ import Tests.LoginTest;
 public class LoginPage extends BasePage {
 
 	WebDriver driver;
-	
+
 	@FindBy(id = "ctl00_LoginView_LoginLink")
 	WebElement btnLoginMain;
 
@@ -54,11 +54,9 @@ public class LoginPage extends BasePage {
 	}
 
 	public boolean verifyButtonLoginVisible(String id) {
-		if (BasePage.verifyLoadsMenu()) {
-			WebElement element = driver.findElement(By.id(id));
-			return BasePage.waitForElementVisible(element);
-		}
-		return false;
+		BasePage.verifyLoadsMenu();
+		WebElement element = driver.findElement(By.id(id));
+		return BasePage.waitForElementVisible(element);
 	}
 
 	public boolean verifyErrorMsg(String errorMsg) {

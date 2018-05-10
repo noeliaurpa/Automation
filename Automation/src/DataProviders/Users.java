@@ -3,10 +3,6 @@ package DataProviders;
 import org.testng.annotations.DataProvider;
 
 public class Users {
-
-	public Users() {
-		// TODO Auto-generated constructor stub
-	}
 	
 	@DataProvider(name = "parameterRegister")
 	public Object[][] dataProviderOfRegister() {

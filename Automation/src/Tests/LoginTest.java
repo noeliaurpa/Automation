@@ -21,20 +21,20 @@ public class LoginTest extends BaseTest {
 
 	LoginPage loginPage;
 
-	@Test
+	@Test(priority=2)
 	public void displayMenuLoginPage() {
 		BasePage basePage = new BasePage(super.getDriver());
 		Assert.assertTrue(basePage.verifyLoadsMenu());
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void displayPageLogin() {
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.buttonLoginMain();
 		Assert.assertTrue(loginPage.verifyButtonLoginVisible("ctl00_Main_LoginConrol_LoginButton"));
 	}
 
-	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class)
+	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class, priority=4)
 	public void verifyCredentialsLogin(String username, String password) {
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.logIn(username, password);

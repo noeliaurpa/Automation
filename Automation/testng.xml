@@ -15,6 +15,7 @@
 			<class name="Tests.RegisterTest" />
 			<class name="Tests.MyAdsAndProfileTest" />
 			<class name="Tests.PostAnAdTest" />
+			<class name="Tests.CategoriesTest" />
 		</classes>
 	</test>
 	<test name="TestWithFirefox">
@@ -29,6 +30,7 @@
 			<class name="Tests.RegisterTest" />
 			<class name="Tests.MyAdsAndProfileTest" />
 			<class name="Tests.PostAnAdTest" />
+			<class name="Tests.CategoriesTest" />
 		</classes>
 	</test>
 </suite>

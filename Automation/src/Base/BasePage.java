@@ -18,7 +18,7 @@ public class BasePage extends BaseTest {
 	//constructor que reciba el driver
 	//Investigar cuando se utiliza un try catch
 	public BasePage(WebDriver _driver){
-		driver = _driver;
+		driver = super.getDriver();
 	}
 	
 	public static boolean verifypresenceOfElementLocated(String id) {

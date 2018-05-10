@@ -13,7 +13,7 @@ public class HomePageTest extends BaseTest {
 	NavigationPage navigationPage;
 	LoginPage loginPage;
 	
-	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class)
+	@Test(dataProvider = "parameterLogin", dataProviderClass = Users.class, priority=0)
 	public void clickButtonHomeMenu(String username, String password) {
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.logIn(username, password);
@@ -22,7 +22,7 @@ public class HomePageTest extends BaseTest {
 		Assert.assertTrue(navigationPage.verifyLoadsCategories());
 	}
 	
-	@Test()
+	@Test(priority=1)
 	public void displayAllFiels() {
 		navigationPage = new NavigationPage(super.getDriver());
 		Assert.assertTrue(navigationPage.verifyLoadsCategories());

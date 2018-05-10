@@ -21,20 +21,20 @@ public class RegisterTest extends BaseTest {
 	RegisterPage registerPage;
 	NavigationPage navigationPage;
 
-	@Test
+	@Test(priority=5)
 	public void displayMenuRegisterPage() {
 		BasePage basePage = new BasePage(super.getDriver());
 		Assert.assertTrue(basePage.verifyLoadsMenu());
 	}
 	
-	@Test
+	@Test(priority=6)
 	public void DisplayPageRegister() {
 		registerPage = new RegisterPage(super.getDriver());
 		registerPage.ButtonRegisterMain();
 		Assert.assertTrue(registerPage.verifypresenceOfElement("ctl00_Main_CreateUserWizardControl___CustomNav0_StepNextButtonButton"));
 	}
 
-	@Test
+	@Test(priority=7)
 	public void MandatoryMessageDisplayed() {
 		// se le asigna al objeto el botón PageRegister que tiene ese id y se le dice
 		// que la
@@ -45,7 +45,7 @@ public class RegisterTest extends BaseTest {
 		Assert.assertTrue(registerPage.showMessagesEmptyFields());
 	}
 
-	@Test(dataProvider = "parameterRegister", dataProviderClass = Users.class)
+	@Test(dataProvider = "parameterRegister", dataProviderClass = Users.class, priority=8)
 	public void MessageWhenUserExist(String firsname, String lastname, String email, String username, String password,
 			String confirmpassword, String securityQuestion, String securityanswer) {
 		registerPage = new RegisterPage(super.getDriver());
@@ -54,7 +54,7 @@ public class RegisterTest extends BaseTest {
 		Assert.assertTrue(registerPage.verifypresenceOfElement("ctl00_Main_InfoLabel"));
 	}
 
-	@Test(dataProvider = "parameterRegister", dataProviderClass = Users.class)
+	@Test(dataProvider = "parameterRegister", dataProviderClass = Users.class, priority=9)
 	public void MessageDifferentPasswords(String firsname, String lastname, String email, String username,
 			String password, String confirmpassword, String securityQuestion, String securityanswer) {
 		registerPage = new RegisterPage(super.getDriver());
