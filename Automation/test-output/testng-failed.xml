@@ -4,22 +4,8 @@
   <test thread-count="5" name="TestWithChrome(failed)">
     <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="executionType" value="local"/>
+    <parameter name="executionType" value="remote"/>
     <classes>
-      <class name="Tests.LoginTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.LoginTest -->
-      <class name="Tests.MyAdsAndProfileTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyToDeployAllFielsUserLogged" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.MyAdsAndProfileTest -->
       <class name="Tests.HomePageTest">
         <methods>
           <include name="closeDriver"/>
@@ -27,64 +13,6 @@
           <include name="setupDriver"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->
-      <class name="Tests.PostAnAdTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="displayAllFiels" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.PostAnAdTest -->
-      <class name="Tests.RegisterTest">
-        <methods>
-          <include name="MessageWhenUserExist" invocation-numbers="1"/>
-          <include name="closeDriver"/>
-          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.RegisterTest -->
     </classes>
   </test> <!-- TestWithChrome(failed) -->
-  <test thread-count="5" name="TestWithFirefox(failed)">
-    <parameter name="baseURL" value="http://qa-trainingw7:86/"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="executionType" value="local"/>
-    <classes>
-      <class name="Tests.LoginTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.LoginTest -->
-      <class name="Tests.MyAdsAndProfileTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="verifyToDeployAllFielsUserLogged" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.MyAdsAndProfileTest -->
-      <class name="Tests.HomePageTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="clickButtonHomeMenu" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.HomePageTest -->
-      <class name="Tests.PostAnAdTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="displayAllFiels" invocation-numbers="1"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.PostAnAdTest -->
-      <class name="Tests.RegisterTest">
-        <methods>
-          <include name="MessageWhenUserExist" invocation-numbers="1"/>
-          <include name="closeDriver"/>
-          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.RegisterTest -->
-    </classes>
-  </test> <!-- TestWithFirefox(failed) -->
 </suite> <!-- Failed suite [LoginXMLFile] -->
