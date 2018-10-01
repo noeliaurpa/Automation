@@ -1,0 +1,1 @@
+cd resources & java -jar selenium-server-standalone-3.11.0.jar -role webdriver -hub http://192.168.189.181:5566/grid/register -port 5567

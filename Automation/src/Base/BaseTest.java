@@ -1,6 +1,9 @@
 package Base;
 
+import java.io.File;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +15,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-
 import org.openqa.selenium.Capabilities;
 
 public class BaseTest {
@@ -35,16 +37,18 @@ public class BaseTest {
 			
 			if (executionType.toLowerCase().equals("local")) {
 				if (browser.toLowerCase().equals("chrome")) {
-					System.setProperty("webdriver.chrome.driver", "C:\\Users\\nurpi-as\\Downloads\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 					driver = new ChromeDriver();
 					System.out.println("Create driver chrome");
 				}else {
-					System.setProperty("webdriver.gecko.driver", "C:\\Users\\nurpi-as\\Downloads\\geckodriver.exe");
+					System.setProperty("webdriver.gecko.driver", "./resources/geckodriver.exe");
 					driver = new FirefoxDriver();
 					System.out.println("Create driver firefox");
 				}
 			}else {
-				String nodeURL = "http://192.168.189.181:5566/wd/hub";
+				Runtime.getRuntime().exec("cmd.exe /C start \"start hub\" \".\\resources\\Hub.bat\"");
+				Runtime.getRuntime().exec("cmd.exe /C start \"start hub\" \".\\resources\\Node.bat\"");
+				String nodeURL = "http://192.168.189.181:5567/wd/hub";
 				DesiredCapabilities capabilities = new DesiredCapabilities();
 				capabilities.setBrowserName(browser);
 				capabilities.setPlatform(Platform.WINDOWS);
@@ -52,43 +56,9 @@ public class BaseTest {
 				driver = new RemoteWebDriver(nodeurl, capabilities);
 			}
 			
-			
-			
-			
-			
-			
-			/*
-			if (browser.toLowerCase().equals("chrome")) {
-				if (executionType.toLowerCase().equals("local")) {
-					System.setProperty("webdriver.chrome.driver", "C:\\Users\\nurpi-as\\Downloads\\chromedriver.exe");
-					driver = new ChromeDriver();
-					System.out.println("Create driver chrome");
-				}else {
-					String nodeURL = "http://192.168.189.181:5566/wd/hub";
-					DesiredCapabilities capabilities = new DesiredCapabilities();
-					capabilities.setBrowserName(browser);
-					capabilities.setPlatform(Platform.WINDOWS);
-					URL nodeurl = new URL(nodeURL);
-					driver = new RemoteWebDriver(nodeurl, capabilities);
-				}
-			} else {
-				if (executionType.toLowerCase().equals("local")) {
-					System.setProperty("webdriver.gecko.driver", "C:\\Users\\nurpi-as\\Downloads\\geckodriver.exe");
-					driver = new FirefoxDriver();
-					System.out.println("Create driver firefox");
-				}else {
-					
-					String nodeURL = "http://192.168.189.181:5566/wd/hub";
-					DesiredCapabilities capabilities = new DesiredCapabilities();
-					capabilities.setBrowserName(browser);
-					capabilities.setPlatform(Platform.WINDOWS);
-					URL nodeurl = new URL(nodeURL);
-					driver = new RemoteWebDriver(nodeurl, capabilities);
-				}
-			}*/
 			driver.manage().window().maximize();
 			driver.get(baseUrl);
-			// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			return driver;
 		} catch (Exception e) {
 			System.out.println("EL ERROR ES: "+e);
