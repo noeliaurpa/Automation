@@ -21,7 +21,7 @@ public class BasePage extends BaseTest {
 		driver = super.getDriver();
 	}
 	
-	public static boolean verifypresenceOfElementLocated(String id) {
+	public boolean verifypresenceOfElementLocated(String id) {
 		// Se crea un wait para darle como un tiempo para poder encontrar el elemento
 		// con el id seleccionado, en el tiempo
 		// se le asignan 3 segundos para encontrar el elemento si no existe muestra un
@@ -53,6 +53,7 @@ public class BasePage extends BaseTest {
 		return element.isDisplayed();
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	public static boolean verifyLoadsMenu() {
 		WebDriverWait wait = new WebDriverWait(driver, 3);
 		WebElement element;
@@ -69,4 +70,20 @@ public class BasePage extends BaseTest {
 		}
 		return ShowElements;
 	}
+	
+	@SuppressWarnings("unlikely-arg-type")
+	public static boolean verifyLoadFiels(String[] list) {
+		WebDriverWait wait = new WebDriverWait(driver, 3);
+		WebElement element;
+		boolean[] validateDisplayElements = new boolean[list.length];
+		for (int i = 0; i < list.length; i++) {
+			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id(list[i])));
+			validateDisplayElements[i] = element.isDisplayed();
+		}
+		if (Arrays.asList(false).contains(validateDisplayElements)) {
+			return false;
+		}
+		return true;
+	}
+
 }

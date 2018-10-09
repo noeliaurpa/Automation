@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import Base.BasePage;
-import Tests.LoginTest;
 
 public class LoginPage extends BasePage {
 

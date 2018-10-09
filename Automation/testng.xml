@@ -10,13 +10,13 @@
 		<classes>
 			<!--- aqui se le agrega el nombre de la clase, tiene que ser igual al 
 				nombre de la clase, ejemplo Login o Register -->
-			<class name="Tests.HomePageTest" />
+			<!--class name="Tests.HomePageTest" />
 			<class name="Tests.LoginTest" />
 			<class name="Tests.RegisterTest" />
-			<!--class name="Tests.CategoriesTest" />
+			<class name="Tests.CategoriesTest" />-->
 			<class name="Tests.MyAdsAndProfileTest" />
 			<class name="Tests.PostAnAdTest" />
-			<class name="Tests.CategoriesTest" />-->
+			<class name="Tests.CategoriesTest" />
 		</classes>
 	</test>
 </suite>

@@ -6,28 +6,20 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="executionType" value="local"/>
     <classes>
-      <class name="Tests.LoginTest">
+      <class name="Tests.PostAnAdTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
+          <include name="displayAllFiels" invocation-numbers="1"/>
           <include name="setupDriver"/>
         </methods>
-      </class> <!-- Tests.LoginTest -->
-      <class name="Tests.HomePageTest">
+      </class> <!-- Tests.PostAnAdTest -->
+      <class name="Tests.MyAdsAndProfileTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="clickButtonHomeMenu" invocation-numbers="1"/>
+          <include name="verifyToDeployAllFielsUserLogged" invocation-numbers="1"/>
           <include name="setupDriver"/>
         </methods>
-      </class> <!-- Tests.HomePageTest -->
-      <class name="Tests.RegisterTest">
-        <methods>
-          <include name="MessageWhenUserExist" invocation-numbers="1"/>
-          <include name="closeDriver"/>
-          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- Tests.RegisterTest -->
+      </class> <!-- Tests.MyAdsAndProfileTest -->
     </classes>
   </test> <!-- TestWithChrome(failed) -->
 </suite> <!-- Failed suite [LoginXMLFile] -->
