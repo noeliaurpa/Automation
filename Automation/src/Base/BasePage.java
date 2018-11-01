@@ -8,17 +8,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BasePage extends BaseTest {
+public class BasePage {
 
 	static String[] menuNav = { "ctl00_TopMenuRepeater_ctl00_MenuLink", "ctl00_TopMenuRepeater_ctl01_MenuLink",
 			"ctl00_TopMenuRepeater_ctl02_MenuLink", "ctl00_LoginView_LoginLink", "ctl00_LoginView_RegisterLink",
 			"ctl00_BrowseAllLink" };
-	static WebDriver driver;
+	protected static WebDriver driver;
 
 	//constructor que reciba el driver
 	//Investigar cuando se utiliza un try catch
 	public BasePage(WebDriver _driver){
-		driver = super.getDriver();
+		driver = _driver;
 	}
 	
 	public boolean verifypresenceOfElementLocated(String id) {

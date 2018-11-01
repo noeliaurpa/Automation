@@ -17,7 +17,7 @@ public class CategoriesTest extends BaseTest{
 	@Test(priority=14)
 	public void goToCategories() {
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 		Assert.assertTrue(basePage.verifypresenceOfElementLocated("ctl00_Main_CategoryBrowser_TopCategoryList"));
 	}
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=15)
@@ -25,7 +25,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonAntiquesAndCollectibles(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=16)
@@ -33,7 +33,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonArtsAndCrafts(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=17)
@@ -41,7 +41,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonAuto(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=18)
@@ -49,7 +49,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonElectronics(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=19)
@@ -57,7 +57,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonGarden(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=20)
@@ -65,7 +65,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonHomeCategory(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 	
 	@Test(dataProvider = "parameterCategory", dataProviderClass = Categories.class, priority=21)
@@ -73,7 +73,7 @@ public class CategoriesTest extends BaseTest{
 		categoryPage = new CategoryPage(super.getDriver());
 		Assert.assertTrue(categoryPage.buttonMusic(_dataSearch));
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonHome();
+		navigationPage.goToCategory();
 	}
 
 }

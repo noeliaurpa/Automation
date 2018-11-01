@@ -1,17 +1,336 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="32" passed="26" failed="2" skipped="0">
+<testng-results ignored="10" total="52" passed="35" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-08T21:10:01Z" name="LoginXMLFile" finished-at="2018-10-08T21:10:42Z" duration-ms="41008">
+  <suite started-at="2018-11-01T16:23:37Z" name="LoginXMLFile" finished-at="2018-11-01T16:24:20Z" duration-ms="42481">
     <groups>
     </groups>
-    <test started-at="2018-10-08T21:10:01Z" name="TestWithChrome" finished-at="2018-10-08T21:10:42Z" duration-ms="41008">
+    <test started-at="2018-11-01T16:23:37Z" name="TestWithChrome" finished-at="2018-11-01T16:24:20Z" duration-ms="42481">
+      <class name="Tests.RegisterTest">
+        <test-method signature="displayMenuRegisterPage()[pri:5, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:48Z" name="displayMenuRegisterPage" finished-at="2018-11-01T16:23:48Z" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuRegisterPage -->
+        <test-method signature="DisplayPageRegister()[pri:6, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:48Z" name="DisplayPageRegister" finished-at="2018-11-01T16:23:49Z" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DisplayPageRegister -->
+        <test-method signature="MandatoryMessageDisplayed()[pri:7, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:49Z" name="MandatoryMessageDisplayed" finished-at="2018-11-01T16:23:49Z" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MandatoryMessageDisplayed -->
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:49Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-11-01T16:23:50Z" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Clarisa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vela]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[clarivela@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Clave]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[clave123#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[clave123#]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageWhenUserExist -->
+        <test-method signature="MessageWhenUserExist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:50Z" name="MessageWhenUserExist" data-provider="parameterRegister" finished-at="2018-11-01T16:23:51Z" duration-ms="699" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MariFlor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flori]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mariflor@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Florcita]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[flori123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[flori123#]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"ctl00_Main_InfoLabel"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_Main_InfoLabel}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"ctl00_Main_InfoLabel"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_Main_InfoLabel}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at Pages.RegisterPage.verifypresenceOfElement(RegisterPage.java:121)
+at Tests.RegisterTest.MessageWhenUserExist(RegisterTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageWhenUserExist -->
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:51Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-11-01T16:23:55Z" duration-ms="3883" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Clarisa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vela]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[clarivela@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Clave]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[clave123#]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[clave123#]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (28abcd3ecdc6dd906cd1679ff099323a)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (28abcd3ecdc6dd906cd1679ff099323a)] -> id: ctl00_Main_CreateUserWizardControl_CreateUserStepContainer_PasswordCompare]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+at Base.BasePage.waitForElementVisible(BasePage.java:52)
+at Pages.RegisterPage.verifypresenceOfElement(RegisterPage.java:122)
+at Tests.RegisterTest.MessageDifferentPasswords(RegisterTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageDifferentPasswords -->
+        <test-method signature="MessageDifferentPasswords(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:Tests.RegisterTest@1dac5ef]" started-at="2018-11-01T16:23:55Z" name="MessageDifferentPasswords" data-provider="parameterRegister" finished-at="2018-11-01T16:23:55Z" duration-ms="770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MariFlor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flori]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mariflor@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Florcita]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[flori123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[flori123#]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hola]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageDifferentPasswords -->
+      </class> <!-- Tests.RegisterTest -->
       <class name="Tests.PostAnAdTest">
-        <test-method signature="verifyToDeployUserNotLogged()[pri:12, instance:Tests.PostAnAdTest@e4487af]" started-at="2018-10-08T21:10:23Z" name="verifyToDeployUserNotLogged" finished-at="2018-10-08T21:10:24Z" duration-ms="319" status="PASS">
+        <test-method signature="verifyToDeployUserNotLogged()[pri:12, instance:Tests.PostAnAdTest@58ea606c]" started-at="2018-11-01T16:24:00Z" name="verifyToDeployUserNotLogged" finished-at="2018-11-01T16:24:01Z" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToDeployUserNotLogged -->
-        <test-method signature="displayAllFiels(java.lang.String, java.lang.String)[pri:13, instance:Tests.PostAnAdTest@e4487af]" started-at="2018-10-08T21:10:24Z" name="displayAllFiels" data-provider="parameterLogin" finished-at="2018-10-08T21:10:25Z" duration-ms="963" status="PASS">
+        <test-method signature="displayAllFiels(java.lang.String, java.lang.String)[pri:13, instance:Tests.PostAnAdTest@58ea606c]" started-at="2018-11-01T16:24:01Z" name="displayAllFiels" data-provider="parameterLogin" finished-at="2018-11-01T16:24:02Z" duration-ms="976" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +346,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayAllFiels -->
-        <test-method signature="displayAllFiels(java.lang.String, java.lang.String)[pri:13, instance:Tests.PostAnAdTest@e4487af]" started-at="2018-10-08T21:10:25Z" name="displayAllFiels" data-provider="parameterLogin" finished-at="2018-10-08T21:10:28Z" duration-ms="3550" status="FAIL">
+        <test-method signature="displayAllFiels(java.lang.String, java.lang.String)[pri:13, instance:Tests.PostAnAdTest@58ea606c]" started-at="2018-11-01T16:24:02Z" name="displayAllFiels" data-provider="parameterLogin" finished-at="2018-11-01T16:24:05Z" duration-ms="3559" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -48,9 +367,9 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: ctl00_Main_PostAdWizard_SubcategoriesList_ctl00_CategoryButton (tried for 3 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-at Base.BasePage.verifyLoadFiels(BasePage.java:79)
-at Pages.NavigationPage.verifyLoadsFielsPostAnAd(NavigationPage.java:101)
-at Tests.PostAnAdTest.displayAllFiels(PostAnAdTest.java:21)
+at Base.BasePage.verifyLoadFiels(BasePage.java:80)
+at Pages.PostAnAdPage.verifyLoadsFielsPostAnAd(PostAnAdPage.java:31)
+at Tests.PostAnAdTest.displayAllFiels(PostAnAdTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -96,245 +415,8 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
           </reporter-output>
         </test-method> <!-- displayAllFiels -->
       </class> <!-- Tests.PostAnAdTest -->
-      <class name="Tests.CategoriesTest">
-        <test-method signature="goToCategories()[pri:14, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:28Z" name="goToCategories" finished-at="2018-10-08T21:10:28Z" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCategories -->
-        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:28Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-10-08T21:10:29Z" duration-ms="984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAntiquesAndCollectibles -->
-        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:29Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-10-08T21:10:30Z" duration-ms="524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAntiquesAndCollectibles -->
-        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:30Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-10-08T21:10:30Z" duration-ms="537" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAntiquesAndCollectibles -->
-        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:30Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-10-08T21:10:31Z" duration-ms="606" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchArtsAndCrafts -->
-        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:31Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-10-08T21:10:31Z" duration-ms="528" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchArtsAndCrafts -->
-        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:31Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-10-08T21:10:32Z" duration-ms="583" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchArtsAndCrafts -->
-        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:32Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-10-08T21:10:33Z" duration-ms="553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAuto -->
-        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:33Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-10-08T21:10:33Z" duration-ms="556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAuto -->
-        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:33Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-10-08T21:10:34Z" duration-ms="555" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAuto -->
-        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:34Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-10-08T21:10:34Z" duration-ms="552" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchElectronics -->
-        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:34Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-10-08T21:10:35Z" duration-ms="1063" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchElectronics -->
-        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:35Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-10-08T21:10:36Z" duration-ms="625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchElectronics -->
-        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:36Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-10-08T21:10:36Z" duration-ms="590" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchGarden -->
-        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:36Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-10-08T21:10:37Z" duration-ms="605" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchGarden -->
-        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:37Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-10-08T21:10:38Z" duration-ms="609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchGarden -->
-        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:38Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-10-08T21:10:38Z" duration-ms="613" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchHome -->
-        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:38Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-10-08T21:10:39Z" duration-ms="596" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchHome -->
-        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:39Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-10-08T21:10:40Z" duration-ms="615" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchHome -->
-        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:40Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-10-08T21:10:40Z" duration-ms="548" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMusic -->
-        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:40Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-10-08T21:10:41Z" duration-ms="611" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMusic -->
-        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6aaceffd]" started-at="2018-10-08T21:10:41Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-10-08T21:10:42Z" duration-ms="905" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMusic -->
-      </class> <!-- Tests.CategoriesTest -->
-      <class name="Tests.MyAdsAndProfileTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.MyAdsAndProfileTest@687e99d8]" started-at="2018-10-08T21:10:01Z" name="setupDriver" finished-at="2018-10-08T21:10:17Z" duration-ms="16267" status="PASS">
+      <class name="Tests.HomePageTest">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.HomePageTest@4e3958e7]" started-at="2018-11-01T16:23:37Z" name="setupDriver" finished-at="2018-11-01T16:23:45Z" duration-ms="7929" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -355,11 +437,513 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="verifyToDeployLoginUserNotLogged()[pri:10, instance:Tests.MyAdsAndProfileTest@687e99d8]" started-at="2018-10-08T21:10:17Z" name="verifyToDeployLoginUserNotLogged" finished-at="2018-10-08T21:10:18Z" duration-ms="561" status="PASS">
+        <test-method signature="clickButtonHomeMenu(java.lang.String, java.lang.String)[pri:0, instance:Tests.HomePageTest@4e3958e7]" started-at="2018-11-01T16:23:45Z" name="clickButtonHomeMenu" data-provider="parameterLogin" finished-at="2018-11-01T16:23:47Z" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noeliaurpi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nurpi1495$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickButtonHomeMenu -->
+        <test-method signature="clickButtonHomeMenu(java.lang.String, java.lang.String)[pri:0, instance:Tests.HomePageTest@4e3958e7]" started-at="2018-11-01T16:23:47Z" name="clickButtonHomeMenu" data-provider="parameterLogin" finished-at="2018-11-01T16:23:47Z" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noeliaurp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nurpi1495$]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"ctl00_LoginView_LoginLink"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_LoginView_LoginLink}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"ctl00_LoginView_LoginLink"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_LoginView_LoginLink}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at Base.BasePage.clickOnElement(BasePage.java:43)
+at Pages.LoginPage.buttonLoginMain(LoginPage.java:33)
+at Pages.LoginPage.logIn(LoginPage.java:49)
+at Tests.HomePageTest.clickButtonHomeMenu(HomePageTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickButtonHomeMenu -->
+        <test-method signature="displayAllFiels()[pri:1, instance:Tests.HomePageTest@4e3958e7]" started-at="2018-11-01T16:23:47Z" name="displayAllFiels" finished-at="2018-11-01T16:23:47Z" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayAllFiels -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Tests.HomePageTest@4e3958e7]" started-at="2018-11-01T16:24:19Z" name="closeDriver" finished-at="2018-11-01T16:24:20Z" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Tests.HomePageTest -->
+      <class name="Tests.CategoriesTest">
+        <test-method signature="goToCategories()[pri:14, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:05Z" name="goToCategories" finished-at="2018-11-01T16:24:05Z" duration-ms="120" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Tests.CategoriesTest.goToCategories(CategoriesTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCategories -->
+        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:05Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-11-01T16:24:06Z" duration-ms="708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAntiquesAndCollectibles -->
+        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:06Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-11-01T16:24:06Z" duration-ms="517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAntiquesAndCollectibles -->
+        <test-method signature="searchAntiquesAndCollectibles(java.lang.String)[pri:15, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:06Z" name="searchAntiquesAndCollectibles" data-provider="parameterCategory" finished-at="2018-11-01T16:24:07Z" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAntiquesAndCollectibles -->
+        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:07Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-11-01T16:24:07Z" duration-ms="507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchArtsAndCrafts -->
+        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:07Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-11-01T16:24:08Z" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchArtsAndCrafts -->
+        <test-method signature="searchArtsAndCrafts(java.lang.String)[pri:16, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:08Z" name="searchArtsAndCrafts" data-provider="parameterCategory" finished-at="2018-11-01T16:24:08Z" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchArtsAndCrafts -->
+        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:08Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-11-01T16:24:09Z" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAuto -->
+        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:09Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-11-01T16:24:09Z" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAuto -->
+        <test-method signature="searchAuto(java.lang.String)[pri:17, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:09Z" name="searchAuto" data-provider="parameterCategory" finished-at="2018-11-01T16:24:10Z" duration-ms="553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAuto -->
+        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:10Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-11-01T16:24:11Z" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchElectronics -->
+        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:11Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-11-01T16:24:12Z" duration-ms="1310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchElectronics -->
+        <test-method signature="searchElectronics(java.lang.String)[pri:18, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:12Z" name="searchElectronics" data-provider="parameterCategory" finished-at="2018-11-01T16:24:12Z" duration-ms="551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchElectronics -->
+        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:12Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-11-01T16:24:13Z" duration-ms="611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGarden -->
+        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:13Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-11-01T16:24:14Z" duration-ms="603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGarden -->
+        <test-method signature="searchGarden(java.lang.String)[pri:19, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:14Z" name="searchGarden" data-provider="parameterCategory" finished-at="2018-11-01T16:24:14Z" duration-ms="607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGarden -->
+        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:14Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-11-01T16:24:15Z" duration-ms="957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHome -->
+        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:15Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-11-01T16:24:16Z" duration-ms="606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHome -->
+        <test-method signature="searchHome(java.lang.String)[pri:20, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:16Z" name="searchHome" data-provider="parameterCategory" finished-at="2018-11-01T16:24:16Z" duration-ms="608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHome -->
+        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:16Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-11-01T16:24:17Z" duration-ms="607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMusic -->
+        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:17Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-11-01T16:24:18Z" duration-ms="1307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMusic -->
+        <test-method signature="searchMusic(java.lang.String)[pri:21, instance:Tests.CategoriesTest@6f45df59]" started-at="2018-11-01T16:24:18Z" name="searchMusic" data-provider="parameterCategory" finished-at="2018-11-01T16:24:19Z" duration-ms="625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMusic -->
+      </class> <!-- Tests.CategoriesTest -->
+      <class name="Tests.LoginTest">
+        <test-method signature="displayMenuLoginPage()[pri:2, instance:Tests.LoginTest@77f80c04]" started-at="2018-11-01T16:23:47Z" name="displayMenuLoginPage" finished-at="2018-11-01T16:23:47Z" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayMenuLoginPage -->
+        <test-method signature="displayPageLogin()[pri:3, instance:Tests.LoginTest@77f80c04]" started-at="2018-11-01T16:23:47Z" name="displayPageLogin" finished-at="2018-11-01T16:23:47Z" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayPageLogin -->
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:4, instance:Tests.LoginTest@77f80c04]" started-at="2018-11-01T16:23:47Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-11-01T16:23:48Z" duration-ms="643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noeliaurpi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nurpi1495$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCredentialsLogin -->
+        <test-method signature="verifyCredentialsLogin(java.lang.String, java.lang.String)[pri:4, instance:Tests.LoginTest@77f80c04]" started-at="2018-11-01T16:23:48Z" name="verifyCredentialsLogin" data-provider="parameterLogin" finished-at="2018-11-01T16:23:48Z" duration-ms="306" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noeliaurp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nurpi1495$]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"ctl00_LoginView_MemberName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_LoginView_MemberName}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"ctl00_LoginView_MemberName"}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'SCA-WS380', ip: '192.168.189.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\nurpi-as\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: 28abcd3ecdc6dd906cd1679ff099323a
+*** Element info: {Using=id, value=ctl00_LoginView_MemberName}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at Pages.HomePage.verifyUsr(HomePage.java:59)
+at Tests.LoginTest.verifyCredentialsLogin(LoginTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCredentialsLogin -->
+      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.MyAdsAndProfileTest">
+        <test-method signature="verifyToDeployLoginUserNotLogged()[pri:10, instance:Tests.MyAdsAndProfileTest@5c90e579]" started-at="2018-11-01T16:23:55Z" name="verifyToDeployLoginUserNotLogged" finished-at="2018-11-01T16:23:56Z" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToDeployLoginUserNotLogged -->
-        <test-method signature="verifyToDeployAllFielsUserLogged(java.lang.String, java.lang.String)[pri:11, instance:Tests.MyAdsAndProfileTest@687e99d8]" started-at="2018-10-08T21:10:18Z" name="verifyToDeployAllFielsUserLogged" data-provider="parameterLogin" finished-at="2018-10-08T21:10:20Z" duration-ms="1615" status="PASS">
+        <test-method signature="verifyToDeployAllFielsUserLogged(java.lang.String, java.lang.String)[pri:11, instance:Tests.MyAdsAndProfileTest@5c90e579]" started-at="2018-11-01T16:23:56Z" name="verifyToDeployAllFielsUserLogged" data-provider="parameterLogin" finished-at="2018-11-01T16:23:57Z" duration-ms="1013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -375,7 +959,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToDeployAllFielsUserLogged -->
-        <test-method signature="verifyToDeployAllFielsUserLogged(java.lang.String, java.lang.String)[pri:11, instance:Tests.MyAdsAndProfileTest@687e99d8]" started-at="2018-10-08T21:10:20Z" name="verifyToDeployAllFielsUserLogged" data-provider="parameterLogin" finished-at="2018-10-08T21:10:23Z" duration-ms="3574" status="FAIL">
+        <test-method signature="verifyToDeployAllFielsUserLogged(java.lang.String, java.lang.String)[pri:11, instance:Tests.MyAdsAndProfileTest@5c90e579]" started-at="2018-11-01T16:23:57Z" name="verifyToDeployAllFielsUserLogged" data-provider="parameterLogin" finished-at="2018-11-01T16:24:00Z" duration-ms="3552" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -396,9 +980,9 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: ctl00_Main_CurrentAdsButton (tried for 3 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-at Base.BasePage.verifyLoadFiels(BasePage.java:79)
-at Pages.NavigationPage.verifyLoadFielsMyAdsAndProfile(NavigationPage.java:91)
-at Tests.MyAdsAndProfileTest.verifyToDeployAllFielsUserLogged(MyAdsAndProfileTest.java:21)
+at Base.BasePage.verifyLoadFiels(BasePage.java:80)
+at Pages.MyAdsAndProfilePage.verifyLoadFielsMyAdsAndProfile(MyAdsAndProfilePage.java:27)
+at Tests.MyAdsAndProfileTest.verifyToDeployAllFielsUserLogged(MyAdsAndProfileTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -443,10 +1027,6 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToDeployAllFielsUserLogged -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:Tests.MyAdsAndProfileTest@687e99d8]" started-at="2018-10-08T21:10:42Z" name="closeDriver" finished-at="2018-10-08T21:10:42Z" duration-ms="610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
       </class> <!-- Tests.MyAdsAndProfileTest -->
     </test> <!-- TestWithChrome -->
   </suite> <!-- LoginXMLFile -->

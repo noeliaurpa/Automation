@@ -6,13 +6,13 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="executionType" value="local"/>
     <classes>
-      <class name="Tests.PostAnAdTest">
+      <class name="Tests.LoginTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="displayAllFiels" invocation-numbers="1"/>
+          <include name="verifyCredentialsLogin" invocation-numbers="1"/>
           <include name="setupDriver"/>
         </methods>
-      </class> <!-- Tests.PostAnAdTest -->
+      </class> <!-- Tests.LoginTest -->
       <class name="Tests.MyAdsAndProfileTest">
         <methods>
           <include name="closeDriver"/>
@@ -20,6 +20,35 @@
           <include name="setupDriver"/>
         </methods>
       </class> <!-- Tests.MyAdsAndProfileTest -->
+      <class name="Tests.HomePageTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="clickButtonHomeMenu" invocation-numbers="1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.HomePageTest -->
+      <class name="Tests.CategoriesTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="goToCategories"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.CategoriesTest -->
+      <class name="Tests.PostAnAdTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="displayAllFiels" invocation-numbers="1"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.PostAnAdTest -->
+      <class name="Tests.RegisterTest">
+        <methods>
+          <include name="MessageWhenUserExist" invocation-numbers="1"/>
+          <include name="closeDriver"/>
+          <include name="MessageDifferentPasswords" invocation-numbers="0"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Tests.RegisterTest -->
     </classes>
   </test> <!-- TestWithChrome(failed) -->
 </suite> <!-- Failed suite [LoginXMLFile] -->

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import Base.BaseTest;
 import DataProviders.Users;
 import Pages.LoginPage;
+import Pages.MyAdsAndProfilePage;
 import Pages.NavigationPage;
 
 public class MyAdsAndProfileTest extends BaseTest{
@@ -17,15 +18,15 @@ public class MyAdsAndProfileTest extends BaseTest{
 		loginPage = new LoginPage(super.getDriver());
 		loginPage.logIn(username, password);
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonMyAdsAndProfile();
-		Assert.assertTrue(navigationPage.verifyLoadFielsMyAdsAndProfile());
+		navigationPage.goToMyAdsAndProfile();
+		Assert.assertTrue(MyAdsAndProfilePage.verifyLoadFielsMyAdsAndProfile());
 		navigationPage.buttonLogout();
 	}
 	
 	@Test(priority=10)
 	public void verifyToDeployLoginUserNotLogged() {
 		navigationPage = new NavigationPage(super.getDriver());
-		navigationPage.buttonMyAdsAndProfile();
+		navigationPage.goToMyAdsAndProfile();
 		loginPage = new LoginPage(super.getDriver());
 		Assert.assertTrue(loginPage.verifyButtonLoginVisible("ctl00_Main_LoginConrol_LoginButton"));
 	}
